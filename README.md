@@ -24,3 +24,21 @@ use duncan3dc\Bom\Util;
 
 $string = Util::removeBom($bomString);
 ```
+
+
+There's also a stream filter available:
+```php
+use duncan3dc\Bom\StreamFilter;
+
+stream_filter_register("bom-filter", StreamFilter::class);
+
+$file = fopen($filename, "r");
+
+stream_filter_append($file, "bom-filter");
+
+while ($row = fgetcsv($file)) {
+    print_r($row);
+}
+
+fclose($file);
+```
