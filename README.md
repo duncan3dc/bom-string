@@ -1,8 +1,9 @@
 # bom-string
 A small PHP library to handle byte order marks (BOM)
 
-[![Build Status](https://img.shields.io/travis/duncan3dc/bom-string.svg)](https://travis-ci.org/duncan3dc/bom-string)
-[![Latest Version](https://img.shields.io/packagist/v/duncan3dc/bom-string.svg)](https://packagist.org/packages/duncan3dc/bom-string)
+[![Latest Stable Version](https://poser.pugx.org/duncan3dc/bom-string/version.svg)](https://packagist.org/packages/duncan3dc/bom-string)
+[![Build Status](https://travis-ci.org/duncan3dc/bom-string.svg?branch=master)](https://travis-ci.org/duncan3dc/bom-string)
+[![Coverage Status](https://coveralls.io/repos/github/duncan3dc/bom-string/badge.svg)](https://coveralls.io/github/duncan3dc/bom-string)
 
 
 ## Installation
