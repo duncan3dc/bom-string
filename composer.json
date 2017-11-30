@@ -18,9 +18,9 @@
         "phpunit/phpunit": "^5.3"
     },
     "autoload": {
-        "psr-4": {
-            "duncan3dc\\Bom\\": "src/",
-            "duncan3dc\\BomTests\\": "tests/"
-        }
+        "psr-4": {"duncan3dc\\Bom\\": "src/"}
+    },
+    "autoload-dev": {
+        "psr-4": {"duncan3dc\\BomTests\\": "tests/"}
     }
 }
