@@ -2,6 +2,9 @@
 
 namespace duncan3dc\Bom;
 
+use function mb_convert_encoding;
+use function substr;
+
 class Handler
 {
     const UNKNOWN = "";

@@ -2,6 +2,9 @@
 
 namespace duncan3dc\Bom;
 
+use function stream_bucket_append;
+use function stream_bucket_make_writeable;
+
 class StreamFilter extends \php_user_filter
 {
 
@@ -25,6 +28,6 @@ class StreamFilter extends \php_user_filter
             stream_bucket_append($out, $bucket);
         }
 
-        return PSFS_PASS_ON;
+        return \PSFS_PASS_ON;
     }
 }

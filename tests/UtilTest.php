@@ -3,6 +3,7 @@
 namespace duncan3dc\BomTests;
 
 use duncan3dc\Bom\Util;
+use function file_get_contents;
 
 class UtilTest extends \PHPUnit_Framework_TestCase
 {

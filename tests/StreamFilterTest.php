@@ -3,6 +3,13 @@
 namespace duncan3dc\BomTests;
 
 use duncan3dc\Bom\StreamFilter;
+use function fclose;
+use function file_get_contents;
+use function fopen;
+use function fread;
+use function glob;
+use function stream_filter_append;
+use function stream_filter_register;
 
 class StreamFilterTest extends \PHPUnit_Framework_TestCase
 {
