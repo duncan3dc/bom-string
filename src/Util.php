@@ -12,7 +12,7 @@ class Util
      *
      * @param string
      */
-    public static function removeBom($string)
+    public static function removeBom(string $string): string
     {
         $handler = new Handler;
 

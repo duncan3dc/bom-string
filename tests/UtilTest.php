@@ -8,7 +8,7 @@ use function file_get_contents;
 class UtilTest extends \PHPUnit_Framework_TestCase
 {
 
-    public function fileProvider()
+    public function fileProvider(): \Generator
     {
         foreach (glob(__DIR__ . "/files/*.csv") as $filename) {
             yield [$filename];
@@ -19,7 +19,7 @@ class UtilTest extends \PHPUnit_Framework_TestCase
     /**
      * @dataProvider fileProvider
      */
-    public function testRemoveBom($filename)
+    public function testRemoveBom(string $filename): void
     {
         # The clean UTF-8 file that we are comparing against
         $expected = file_get_contents(__DIR__ . "/files/no-bom.csv");

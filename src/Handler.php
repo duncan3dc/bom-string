@@ -25,7 +25,7 @@ class Handler
      *
      * @return string The encoding of the string
      */
-    private function getEncoding(&$string)
+    private function getEncoding(string &$string): string
     {
         # Check for the UTF-8 byte order mark
         if (substr($string, 0, 3) === self::UTF8) {
@@ -56,7 +56,7 @@ class Handler
      *
      * @param string
      */
-    public function convert($string)
+    public function convert(string $string): string
     {
         if ($this->encoding === null) {
             $this->encoding = $this->getEncoding($string);
