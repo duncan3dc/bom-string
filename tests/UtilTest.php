@@ -3,9 +3,10 @@
 namespace duncan3dc\BomTests;
 
 use duncan3dc\Bom\Util;
+use PHPUnit\Framework\TestCase;
 use function file_get_contents;
 
-class UtilTest extends \PHPUnit_Framework_TestCase
+class UtilTest extends TestCase
 {
 
     public function fileProvider(): \Generator
