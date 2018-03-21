@@ -5,6 +5,20 @@ Changelog
 
 --------
 
+## 1.0.0 - 2018-03-21
+
+### Added
+
+* [Support] Add support for PHP 7.2.
+
+### Changed
+
+* [Support] Drop support for PHP 5.6.
+* [Support] Drop support for PHP 7.0.
+* [Support] Drop support for PHP HHVM.
+
+--------
+
 ## 0.2.0 - 2016-10-02
 
 ### Added
