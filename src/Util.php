@@ -10,7 +10,7 @@ class Util
      *
      * @param string $string The file contents to convert
      *
-     * @param string
+     * @return string
      */
     public static function removeBom(string $string): string
     {

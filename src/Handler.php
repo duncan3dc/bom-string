@@ -54,7 +54,7 @@ class Handler
      *
      * @param string $string The data to read/convert
      *
-     * @param string
+     * @return string
      */
     public function convert(string $string): string
     {
