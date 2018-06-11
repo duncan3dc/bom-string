@@ -7,6 +7,11 @@ use function stream_bucket_make_writeable;
 
 class StreamFilter extends \php_user_filter
 {
+    /**
+     * @var Handler $handler The bom handler instance.
+     */
+    private $handler;
+
 
     public function onCreate(): void
     {
