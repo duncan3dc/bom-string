@@ -13,9 +13,10 @@ class StreamFilter extends \php_user_filter
     private $handler;
 
 
-    public function onCreate(): void
+    public function onCreate(): bool
     {
         $this->handler = new Handler;
+        return true;
     }
 
 
