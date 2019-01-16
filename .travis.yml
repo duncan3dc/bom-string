@@ -20,12 +20,18 @@ install:
 
 script:
   - vendor/bin/phpunit
-  - tests/lint.sh
-  - vendor/bin/composer-require-checker
-  - vendor/bin/phpstan analyse --level=max src tests
 
 jobs:
   include:
+
+    - stage: dependencies
+      script:
+        - vendor/bin/composer-require-checker
+
+    - stage: code quality
+      script:
+        - vendor/bin/phpstan analyse --level=max src tests
+
     - stage: coverage
       script:
         - vendor/bin/phpunit --coverage-clover=coverage.xml
