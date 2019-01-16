@@ -28,6 +28,10 @@ jobs:
       script:
         - vendor/bin/composer-require-checker
 
+    - stage: coding standards
+      script:
+        - vendor/bin/phpcs --standard=PSR1,PSR2,PSR12 src tests
+
     - stage: code quality
       script:
         - vendor/bin/phpstan analyse --level=max src tests

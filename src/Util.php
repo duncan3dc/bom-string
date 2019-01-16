@@ -14,7 +14,7 @@ class Util
      */
     public static function removeBom(string $string): string
     {
-        $handler = new Handler;
+        $handler = new Handler();
 
         return $handler->convert($string);
     }
