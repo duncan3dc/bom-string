@@ -21,13 +21,10 @@ install:
 
 script:
   - vendor/bin/phpunit
+  - vendor/bin/composer-require-checker
 
 jobs:
   include:
-
-    - stage: dependencies
-      script:
-        - vendor/bin/composer-require-checker
 
     - stage: coding standards
       script:
