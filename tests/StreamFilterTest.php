@@ -25,7 +25,8 @@ class StreamFilterTest extends TestCase
 
     public function fileProvider(): \Generator
     {
-        foreach (glob(__DIR__ . "/files/*.csv") as $filename) {
+        $files = glob(__DIR__ . "/files/*.csv") ?: [];
+        foreach ($files as $filename) {
             yield [$filename];
         }
     }
