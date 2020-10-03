@@ -7,10 +7,10 @@ use function substr;
 
 class Handler
 {
-    const UNKNOWN = "";
-    const UTF8 = "\xEF\xBB\xBF";
-    const UTF16BE = "\xFE\xFF";
-    const UTF16LE = "\xFF\xFE";
+    private const UNKNOWN = "";
+    private const UTF8 = "\xEF\xBB\xBF";
+    private const UTF16BE = "\xFE\xFF";
+    private const UTF16LE = "\xFF\xFE";
 
     /**
      * @var string $encoding The encoding that the data we're handling is in.

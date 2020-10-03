@@ -4,6 +4,7 @@ namespace duncan3dc\BomTests;
 
 use duncan3dc\Bom\StreamFilter;
 use PHPUnit\Framework\TestCase;
+
 use function assert;
 use function fclose;
 use function file_get_contents;
