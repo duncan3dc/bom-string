@@ -5,6 +5,20 @@ Changelog
 
 --------
 
+## 1.2.0 - 2022-07-13
+
+### Added
+
+* [Support] Add support for PHP 8.1.
+
+### Changed
+
+* [Support] Requires composer-runtime-api ^2 
+* [Support] Drop support for PHP 7.2.
+* [Support] Drop support for PHP 7.3.
+
+--------
+
 ## 1.1.0 - 2020-10-04
 
 ### Added

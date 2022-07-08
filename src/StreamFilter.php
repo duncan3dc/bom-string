@@ -10,7 +10,7 @@ class StreamFilter extends \php_user_filter
     /**
      * @var Handler $handler The bom handler instance.
      */
-    private $handler;
+    private \duncan3dc\Bom\Handler $handler;
 
 
     public function onCreate(): bool

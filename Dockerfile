@@ -1,4 +1,4 @@
-ARG PHP_VERSION=7.2
+ARG PHP_VERSION=7.4
 FROM php:${PHP_VERSION}-cli
 
 # Install pickle to help manage extensions
@@ -10,8 +10,9 @@ ARG COVERAGE
 RUN if [ "$COVERAGE" = "pcov" ]; then pickle install pcov && docker-php-ext-enable pcov; fi
 
 # Install composer to manage PHP dependencies
-RUN curl https://getcomposer.org/download/1.10.13/composer.phar -o /usr/local/sbin/composer
-RUN chmod +x /usr/local/sbin/composer
-RUN composer self-update
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
+ && php composer-setup.php --2.2 \
+ && mv composer.phar /usr/local/bin/composer \
+ && chmod +x /usr/local/bin/composer 
 
 WORKDIR /app
