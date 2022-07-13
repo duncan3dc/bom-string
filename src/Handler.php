@@ -15,7 +15,7 @@ class Handler
     /**
      * @var string $encoding The encoding that the data we're handling is in.
      */
-    private $encoding;
+    private ?string $encoding = null;
 
 
     /**
@@ -53,8 +53,6 @@ class Handler
      * Read some data, remove any BOM found, and convert to UTF-8.
      *
      * @param string $string The data to read/convert
-     *
-     * @return string
      */
     public function convert(string $string): string
     {

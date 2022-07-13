@@ -17,7 +17,6 @@ use function stream_filter_register;
 
 class StreamFilterTest extends TestCase
 {
-
     public static function setUpBeforeClass(): void
     {
         stream_filter_register("bom-filter", StreamFilter::class);
