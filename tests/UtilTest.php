@@ -10,7 +10,6 @@ use function is_string;
 
 class UtilTest extends TestCase
 {
-
     /**
      * @return \Generator<array<string>>
      */

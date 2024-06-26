@@ -37,7 +37,7 @@ jobs:
         run: docker exec ci vendor/bin/phpstan analyse --level=max src tests
 
       - name: Coding Standards
-        run: docker exec ci vendor/bin/phpcs --standard=PSR1,PSR2,PSR12 src tests
+        run: docker exec ci vendor/bin/phpcs
 
       - name: Check Dependencies
         run: docker exec ci vendor/bin/composer-require-checker

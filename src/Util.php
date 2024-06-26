@@ -4,7 +4,6 @@ namespace duncan3dc\Bom;
 
 class Util
 {
-
     /**
      * Remove a BOM from a file contents and convert to UTF-8.
      *

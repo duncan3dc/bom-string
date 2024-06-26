@@ -18,7 +18,7 @@
     "require-dev": {
         "maglnet/composer-require-checker": "^2.0 || ^3.0",
         "phpstan/phpstan": "^0.12.100",
-        "squizlabs/php_codesniffer": "^3.4",
+        "squizlabs/php_codesniffer": "^3.4.3",
         "phpunit/phpunit": "^8.1"
     },
     "autoload": {
@@ -32,7 +32,7 @@
             "vendor/bin/phpunit",
             "vendor/bin/composer-require-checker",
             "vendor/bin/phpstan analyse --level=max src tests",
-            "vendor/bin/phpcs --standard=PSR1,PSR2,PSR12 src tests",
+            "vendor/bin/phpcs",
             "@composer validate --strict"
         ]
     }
