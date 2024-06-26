@@ -11,6 +11,9 @@ use function is_string;
 class UtilTest extends TestCase
 {
 
+    /**
+     * @return \Generator<array<string>>
+     */
     public function fileProvider(): \Generator
     {
         $files = glob(__DIR__ . "/files/*.csv") ?: [];

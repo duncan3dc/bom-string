@@ -24,6 +24,9 @@ class StreamFilterTest extends TestCase
     }
 
 
+    /**
+     * @return \Generator<array<string>>
+     */
     public function fileProvider(): \Generator
     {
         $files = glob(__DIR__ . "/files/*.csv") ?: [];
