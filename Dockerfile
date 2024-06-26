@@ -10,8 +10,9 @@ ARG COVERAGE
 RUN if [ "$COVERAGE" = "pcov" ]; then pickle install pcov && docker-php-ext-enable pcov; fi
 
 # Install composer to manage PHP dependencies
-RUN curl https://getcomposer.org/download/1.10.13/composer.phar -o /usr/local/sbin/composer
-RUN chmod +x /usr/local/sbin/composer
-RUN composer self-update
+RUN apt update && apt install -y git zip
+COPY --from=composer /usr/bin/composer /usr/bin/composer
+RUN echo "if [[ $PHP_VERSION == 7.* ]]; then composer self-update --1; fi" > composer.sh
+RUN bash composer.sh
 
 WORKDIR /app
