@@ -5,6 +5,16 @@ Changelog
 
 --------
 
+## 1.2.0 - 2024-06-26
+
+### Added
+
+* [Support] Add support for PHP 8.1.
+* [Support] Add support for PHP 8.2.
+* [Support] Add support for PHP 8.3.
+
+--------
+
 ## 1.1.0 - 2020-10-04
 
 ### Added
